@@ -1,12 +1,26 @@
 
 body {
     height: 3000px;
-    background-image: linear-gradient(to top,#c29163, #fceadc);
+    background-image: radial-gradient(circle, #ffffff, #f4f0f5, #eee0e6, #e8d0d2, #dfc2ba, #d6b6a7, #cbaa93, #bea080, #b6926c, #ad8559, #a47747, #9b6a34);
 }
 img {
     border-radius: 50%;
 }
-head {
-    font-family: "Papyrus"
+::-webkit-scrollbar {
+    width: 10px;
   }
   
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
