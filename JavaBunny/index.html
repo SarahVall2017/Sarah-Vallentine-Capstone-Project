@@ -2,11 +2,33 @@
 <html>
 <body>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <style>
+        .desktop,
+        .print {
+            display: none;
+        }
+
+        @media print {
+            .mobile,
+            .desktop {display: none;
+            }
+
+            .print {
+                display: block;
+            }
+        }
+    </style>
+    <div class="mobile">mobile</div>
+    <div class="desktop">desktop</div>
+    <div class="print">print</div>
     <link rel="stylesheet" href="style.css">
+    <title>Java Bunny</title>
 </head>
 <center>
-<img src = "JavaBunny.jpg" width="15%"> <!--add shadow around image-->
+<img src = "JavaBunny.jpg" width="50%">
+ <!--add shadow around image-->
 </center>
 <br>
 <p>
