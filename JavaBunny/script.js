@@ -35,7 +35,7 @@ contact.addEventListener('submit', event => {
  // Contact form validation
     //Full Name
 
-    var fullName = document.getElementById('fullname');
+var fullName = document.getElementById('fullname');
 var contactForm = document.getElementById('contactform');
 let fullNameErr = document.getElementById('nameErr');
 

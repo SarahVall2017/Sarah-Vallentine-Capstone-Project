@@ -20,6 +20,18 @@ h1{text-align: center;}
 .navbar li{float: left;}
 
 
+.aboutus-content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-photo {
+  width: 50%;
+  max-width: 320px;
+  border-radius: 50%;
+}
 
 .footer-container {
   background: #965883;

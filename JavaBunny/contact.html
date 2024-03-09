@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
+    <center>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+    
         <title>Java Bunny</title>
-    
-                    
-    
+
     </head>
 <body>
         <!--navbar creation w/ unordered list-->
@@ -23,79 +22,84 @@
         </ul>
     </nav>
 
-
-      <main>
-        <div>
-
-        <center>
-        <h1>We Want to Hear From You!</h1>
-        </center>
-
-            
-            <p> 
-                <center>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Nostrum eum itaque perferendis quas, officiis tempora culpa dolorum 
-                voluptate ipsam similique obcaecati sint impedit delectus, 
-                voluptatem soluta consequuntur, consectetur a nam?
-                </center>
-            </p>
-            
-        
-        </div>
-      </main>
-
       <article>
-                
-        <h3>We Want <br> To Hear From You!</h3>
-
+        
+        <h3>We Want to Hear From You!</h3>
+        
+       
         <form class="contactform" id="contactForm">
         
             <input id="fullname" type="text" name="name" placeholder="Full Name" aria-label="Full Name" required />
-            <p id="nameErr" aria-label="Full Name Error">Please enter a valid First and Last Name.</p>
+            <p id="nameErr" aria-label="Full Name Error">First and Last Name.</p>
         
             <input id="email" type="email" name="email" placeholder="E-mail" aria-label="E-mail" required />
-            <p id="emailErr" aria-label="Full Name Error">Please enter a valid E-mail.</p>
+            <p id="emailErr" aria-label="Full Name Error">E-mail.</p>
 
             <input id="phonenum" type="tel" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" required />
-            <p id="phoneNumErr" aria-label="Phone Number Error">Please enter a valid Phone Number.</p>
+            <p id="phoneNumErr" aria-label="Phone Number Error">Phone Number.</p>
 
             <textarea name="message" cols="20" rows="2" placeholder="Message" aria-label="Message" required></textarea>
+
+            <br>
+            <br>
 
             <input type="submit" value="submit" class="submit" aria-label="Submit Button" />
 
         </form>
+       
 
+       
         <h4 id="formSubmit"></h4>
         <h4 id="formSubmit2"></h4>
 
     </article>
 
 
-      
-
-    </section>
-
-    <section class="footer-container">
-
-        <footer class="footer-content">
-
-            <p>&copy; 2024 This website maintained by: Sarah Vallentine</p> 
-
-        </footer>
-
-    </section>
-
-    
-</body>
+<link rel="stylesheet" href="style.css"> 
 
 
 
+<!--map with google api-->
 
+<style>
+
+    #map {height: 400px;
+            width: 25%;}
+
+</style>
+
+<div id="map"></div>
+
+<script>
+    function initMap(){
+        var location = {lat:38.238, lng:-85.720};
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: location
+        });
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBnugsGn58oNYL5w-wuyZWgPF9lvEAaF4&callback=initMap"></script>
 
 <script src="/JavaBunny/script.js"></script>
 
 
 
+</body>
 
+<section class="footer-container">
 
+    <footer class="footer-content">
+
+        <p>&copy; 2024 This website maintained by: Sarah Vallentine</p> 
+
+    </footer>
+
+</section>
+
+</center>
 </html>
