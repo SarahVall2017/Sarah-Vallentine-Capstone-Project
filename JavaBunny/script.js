@@ -1,5 +1,5 @@
 
-
+// Contact Form
 
 const contact = document.querySelector('.contactform');
 
@@ -86,3 +86,27 @@ phoneNum.addEventListener('input', function(e) {
       phoneNumErr.style.display = 'block'
   }
 })
+
+
+//Mailing List!
+`use strict`
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const email = document.getElementById('email_address');
+  const emailValue = email.value;
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (emailPattern.test(emailValue)) {
+    alert('Email is valid');
+    form.submit();
+  } else { 
+    alert('Email is not valid');
+  }
+
+  console.log(form);
+});
+form.addEventListener('submit', function (e) {
+  console.log(email_address);
+});
