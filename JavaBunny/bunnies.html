@@ -11,6 +11,7 @@
     <body>
 
 
+
         <!--navbar creation w/ unordered list-->
 
     <nav class="navbar">
@@ -28,26 +29,139 @@
         </ul>
     </nav>
       
+    
+    <section class="meetourbunnies-container">
+       
+        <h1>Meet our Bunnies!</h1>
 
+        
+            <div class="bunnies">
+              <div class="bunny-group">
+                <div class="bunny">
+                  <img class="bunny-image" src="lop4.jpg" alt="Berry">
+                  <div class="bunny-text">
+                    <h3 class="bunny-heading">
+                      <span class="bunny-name">Berry</span> 
+                    </h3>
+                    <p class="bunny-description">
+                      Berry loves to cuddle and will most certainly try to sneak a nibble of your lemon loaf.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bunnies">
+                    <div class="bunny-group">
+                      <div class="bunny">
+                        <img class="bunny-image" src="lop5.jpg" alt="Sweetie">
+                        <div class="bunny-text">
+                          <h3 class="bunny-heading">
+                            <span class="bunny-name">Sweetie</span> 
+                          </h3>
+                          <p class="bunny-description">
+                            Sweetie enjoys doing binkies around the play area. A true show off!
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="bunnies">
+                        <div class="bunny-group">
+                          <div class="bunny">
+                            <img class="bunny-image" src="lop6.jpg" alt="Crumbs">
+                            <div class="bunny-text">
+                              <h3 class="bunny-heading">
+                                <span class="bunny-name">Crumbs</span> 
+                              </h3>
+                              <p class="bunny-description">
+                                Crumbs is a true snuggle bunny. Nothing makes him more content than a warm lap.
+                              </p>
+                            </div>
+                          </div>
+                          
+                          <div class="bunnies">
+                            <div class="bunny-group">
+                              <div class="bunny">
+                                <img class="bunny-image" src="lop7.jpg" alt="Biscuit">
+                                <div class="bunny-text">
+                                  <h3 class="bunny-heading">
+                                    <span class="bunny-name">Biscuit</span> 
+                                  </h3>
+                                  <p class="bunny-description">
+                                    Biscuit is a curious little rabbit who always needs to know what you're doing.
+                                  </p>
+                                </div>
+                              </div>  
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <section class="sources-container">
+        Info Courtesy of 
+        
+        <li><a href="https://rabbit.org/rescue/rabbit-rescue-groups/">www.rabbit.org</a></li>
+        
+    </section>
                                    
         <section class="aboutus-container" id="aboutus">
 
             <div class="aboutus-content">
     
-                <img src="JavaBunny.jpg" alt="Profile Photo" class="AboutUs-photo" style="width:20%;height:20%;">
-                
-            </div>
+              <!-- Bunny Rescue Chart by Neighboring State-->
 
-            <center>
-            <h1> Welcome to Java Bunny!</h1>
-            <h2>The cafe' where you can pick your favorite treat and brew, and a bunny to hang out with during your visit!</h2>
-            </center>
+              <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+            </script>
 
-        </section>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
+    <script>
+    const xValues = ["Kentucky", "Indiana", "Ohio", "Illinois", "Viginia"];
+    const yValues = [1, 5, 7, 8, 7];
+    const barColors = [
+      "#b91d47",
+      "#00aba9",
+      "#2b5797",
+      "#e8c3b9",
+      "#1e7145"
+    ];
+    
+    new Chart("myChart", {
+      type: "doughnut",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        title: {
+          display: true,
+          text: "Bunny Rescues"
+        }
+      }
+    });
+    </script>
+       
     </section>
 
-    <section class="footer-container">
+        <section class="footer-container">
 
         <footer class="footer-content">
 
@@ -57,6 +171,7 @@
 
     </section>
 
+ 
 
 </body>
 

@@ -18,6 +18,8 @@ h1{text-align: center;}
   text-align: center;
 }
 
+
+
 .navbar a:hover {background-color: #a57496}
 
 .navbar li{float: left;}
@@ -53,12 +55,104 @@ h1{text-align: center;}
   text-align: center;
 }
 
+/* Food and Drink Menu */
+.menu-group {
+  display: grid;
+
+}
+.menu-item {
+  display: flex;
+}
+
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-group {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 
+/* sources */
+
+.sources-container {
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  list-style-type: none
+
+}
 
 
+/* Meet our Bunnies*/
+
+.meetourbunnies-container {
+  justify-content: center;
+  display: flex;
+}
 
 
+.bunny {
+  
+  font-size: 14px;
+}
 
+.bunnies-group-heading {
+  margin: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #ccc;
+}
 
+.bunny-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
 
+.bunny {
+  display: flex;
+}
+
+.bunny-image {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 1.5em;
+}
+
+.bunny-text {
+  flex-grow: 1;
+}
+
+.bunny-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.bunny-name {
+  margin-right: 1.5em;
+}
+
+.bunny-description {
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 992px) {
+  .bunny {
+    font-size: 16px;
+  }
+
+  .bunny-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bunny-image {
+    width: 125px;
+    height: 125px;
+  }
+}
