@@ -46,6 +46,7 @@ h1{text-align: center;}
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 25px;
+ 
 }
 
 .footer-content {
@@ -54,32 +55,11 @@ h1{text-align: center;}
   width: 100%;
   max-width: 1000px;
   text-align: center;
-  position: absolute
-  
-}
-
-/* Food and Drink Menu */
-.menu-group {
-  display: column;
-
-}
-.menu-item {
-  display: flex;
-  align-items: center
-}
-
-.menu-item-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center
-  
-}
-
-.menu-group {
-  grid-template-columns: repeat(1fr);
-}
+   }
 
 
+
+   
 /* sources */
 
 .sources-container {
@@ -112,7 +92,7 @@ h1{text-align: center;}
 
 .bunny-group {
   display: column;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: repeat(2fr);
 
 }
 
@@ -144,3 +124,5 @@ h1{text-align: center;}
 .bunny-name {
   margin-top: auto;
 }
+
+
